@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+app:
+  catalog-path: catalog/field_catalog.json
+  documents-path: documents
+  output-path: out
+  fixture-path: fixtures
+  llm:
+    # Select exactly one provider: openai or gemini
+    provider: ${LLM_PROVIDER:openai}
+    mode: ${LLM_MODE:live}
+    model: ${OPENAI_MODEL:gpt-4.1-mini}
+    api-key: ${OPENAI_API_KEY:}
+    openai-base-url: https://api.openai.com/v1
+    # Gemini settings are retained for optional provider switching.
+    gemini-model: ${GEMINI_MODEL:gemini-2.5-flash}
+    gemini-api-key: ${GEMINI_API_KEY:}
+    gemini-base-url: https://generativelanguage.googleapis.com/v1beta/models
