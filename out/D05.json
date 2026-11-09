@@ -1,0 +1,174 @@
+{
+  "flags" : [ ],
+  "cases" : [ {
+    "case_index" : 0,
+    "label" : "D.L.",
+    "fields" : {
+      "patient_initials" : {
+        "status" : "extracted",
+        "value" : "DL",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Initials: D.L.",
+          "start" : 266,
+          "end" : 280
+        } ]
+      },
+      "patient_age_years" : {
+        "status" : "conflict",
+        "note" : "Conflicting age values reported: 54 and 45"
+      },
+      "patient_sex" : {
+        "status" : "extracted",
+        "value" : "male",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sex: Male",
+          "start" : 289,
+          "end" : 298
+        } ]
+      },
+      "suspect_drug_name" : {
+        "status" : "extracted",
+        "value" : "clozapine",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Clozapine 100 mg tablets.",
+          "start" : 362,
+          "end" : 387
+        } ]
+      },
+      "suspect_drug_dose_value" : {
+        "status" : "extracted",
+        "value" : 300,
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally once daily at night",
+          "start" : 388,
+          "end" : 434
+        } ]
+      },
+      "suspect_drug_dose_unit" : {
+        "status" : "extracted",
+        "value" : "mg",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally once daily at night",
+          "start" : 388,
+          "end" : 434
+        } ]
+      },
+      "suspect_drug_route" : {
+        "status" : "extracted",
+        "value" : "oral",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Current dose 300 mg orally once daily at night",
+          "start" : 388,
+          "end" : 434
+        } ]
+      },
+      "suspect_drug_start_date" : {
+        "status" : "extracted",
+        "value" : "2026-02-09",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Date started: 9 February 2026",
+          "start" : 460,
+          "end" : 489
+        } ]
+      },
+      "concomitant_drugs" : {
+        "status" : "extracted",
+        "value" : [ "sodium valproate", "lorazepam" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Sodium valproate 500 mg orally twice daily (since 2021).",
+          "start" : 553,
+          "end" : 609
+        }, {
+          "quote" : "Lorazepam 1 mg orally at night as required.",
+          "start" : 610,
+          "end" : 653
+        } ]
+      },
+      "event_terms" : {
+        "status" : "extracted",
+        "value" : [ "agranulocytosis", "neutropenic fever", "sore throat", "fever" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "The patient reported a sore throat and fever of 38.6 degrees Celsius for two days.",
+          "start" : 1162,
+          "end" : 1244
+        }, {
+          "quote" : "Agranulocytosis with neutropenic fever, causally related to clozapine (certain).",
+          "start" : 1807,
+          "end" : 1887
+        } ]
+      },
+      "event_onset_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-04",
+        "confidence" : "medium",
+        "provenance" : [ {
+          "quote" : "At the week 9 visit on 6 April 2026 the absolute neutrophil count was 0.3 x 10^9/L (white cell count 1.8 x 10^9/L). The patient reported a sore throat and fever of 38.6 degrees Celsius for two days.",
+          "start" : 1046,
+          "end" : 1244
+        } ]
+      },
+      "event_outcome" : {
+        "status" : "extracted",
+        "value" : "recovering",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "The patient remains an inpatient and is improving.",
+          "start" : 1645,
+          "end" : 1695
+        } ]
+      },
+      "seriousness_criteria" : {
+        "status" : "extracted",
+        "value" : [ "life_threatening", "hospitalization" ],
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Life-threatening: Yes\nHospitalisation: Yes",
+          "start" : 1742,
+          "end" : 1784
+        } ]
+      },
+      "reporter_type" : {
+        "status" : "extracted",
+        "value" : "physician",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Reporting clinician: Dr Owen Faulkner, Consultant Psychiatrist",
+          "start" : 186,
+          "end" : 248
+        } ]
+      },
+      "report_date" : {
+        "status" : "extracted",
+        "value" : "2026-04-11",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Report date: 11 April 2026",
+          "start" : 159,
+          "end" : 185
+        } ]
+      },
+      "country" : {
+        "status" : "extracted",
+        "value" : "AU",
+        "confidence" : "high",
+        "provenance" : [ {
+          "quote" : "Brisbane, Queensland, Australia",
+          "start" : 49,
+          "end" : 80
+        } ]
+      }
+    }
+  } ],
+  "document_id" : "D05",
+  "catalog_version" : "1.0",
+  "model" : "gemini/gemini-3.8-flash"
+}
